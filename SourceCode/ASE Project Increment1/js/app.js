@@ -282,13 +282,25 @@ angular.module('GoogleDirection', ['ngSanitize'])
         $scope.registerUser = function(username,password,cnf_password,emailid)
         {
 
-            if (password === cnf_password){
-                localStorage.setItem('username',username);
-                localStorage.setItem('password',password);
-                localStorage.setItem('emailid',emailid);
-                alert(localStorage.getItem('emailid') + "   Registered Successfully.");
-                window.location = "/ASE%20Project%20Increment1/Login.html";
-             }
+            if (password === cnf_password) {
+                if (password.length >= 8) {
+                    if (validateemail(emailid) == true){
+                        localStorage.setItem('username', username);
+                        localStorage.setItem('password', password);
+                        localStorage.setItem('emailid', emailid);
+                        alert(localStorage.getItem('emailid') + "   Registered Successfully.");
+                        window.location = "/ASE%20Project%20Increment1/Login.html";
+
+                    }
+                    else{
+                        alert("Not a valid e-mail address");
+                    }
+
+                }
+                else{
+                    alert("Password should be more that 8 letters. Please try again");
+                }
+            }
             else {
                 alert("passwords does not match please try again");
             }
@@ -328,4 +340,16 @@ function Logout() {
 
     window.location = "/ASE%20Project%20Increment1/Index.html";
 
+}
+
+function validateemail(emailId) {
+    var x = emailId;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        return false;
+    }
+    else{
+        return true;
+    }
 }
