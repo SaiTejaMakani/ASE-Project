@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="" data-ng-app="GoogleDirection">
+<head>
+    <meta t="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route & Weather Assistance</title>
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-sanitize.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWhSE1HAi753_M8rcFTfcbBXUQInf8y6c&v=3.exp&sensor=true"></script>-->
+
+    <script src="Scripts/Angular.js"></script>
+    <script src="Scripts/googleMap.js"></script>
+    <script src="Scripts/Sanitize.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+
+<body>
+
+<div class="wrapp" ng-controller="googlemapoutput">
+   <!--<form action="Login.html"> -->
+    <div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Interactive Quiz Application</a>
+            </div>
+        </div>
+    </nav>
+        <div class="container container-table">
+            <div class="row vertical-center-row">
+    <table  align="center" class="table table-bordered table-condensed" width=60%>
+        <tr>
+          <td align="center" width=100% colspan="2">
+            <img src="user_image.png" >
+          </td>
+        </tr>
+        <tr>
+            <th>
+                User Name:
+            </th>
+            <th>
+                <input type="text" name="user_name"  id="userName" ng-model="username" placeholder="User Name" >
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Password:
+            </th>
+            <th>
+                <input type="password" name="password"  ng-model="password" placeholder="Password" >
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Conform Password:
+            </th>
+            <th>
+                <input type="password" name="cnf_password"  ng-model="cnf_password" placeholder="Conform Password" >
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Email ID:
+            </th>
+            <th>
+                <input type="text" name="email_id"  ng-model="emailid" placeholder="Email_Id" >
+            </th>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">
+
+                <button type="submit"  ng-model="register" ng-click="registerUser(username,password,cnf_password,emailid)" class="btn btn-info" >
+                    Register
+                </button>
+
+            </td>
+
+        </tr>
+    </table>
+    </div>
+        </div>
+    </div>
+
+        </div>
+<!--</form>-->
+
+
+</body>
+</html>

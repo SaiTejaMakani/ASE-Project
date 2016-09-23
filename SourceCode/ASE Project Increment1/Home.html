@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Test to speech</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="js/app.js"></script>
+    <script src="js/require.js"></script>
+    <script src="node_modules/watson-developer-cloud/tone-analyzer/v3.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body >
+
+<div style="width:800px; margin:0 auto;">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><h4><B>Interactive Quiz Application</B></h4></a>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <document>
+
+            <table class="table table-bordered" style="align-content: center" class="table table-bordered table-condensed">
+                <tr>
+                    <td align="center"><textarea type="text"  id="text" name="text" rows="4" cols="80" placeholder="Find a place,person,incident anything here"></textarea>
+                    </td>
+                    <td align="center"><button class="btn btn-info" onclick="speech()">Speak it!</button>
+                    </td>
+                </tr>
+                <audio src="" class="speech" hidden></audio>
+            </table>
+
+        </document>
+    </div>
+    </br> </br>
+
+    <table class="table table-bordered" style="align-content: center" class="table table-bordered table-condensed">
+        <tr>
+            <td align="center">
+                <div >
+                    <input type="button" class="btn btn-info" value="Logout from Website" onclick="Logout();" />
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div >
+        <table id="display" class="table table-striped" style="align-content: center" class="table table-bordered table-condensed">
+            <!--dynamic rows will be appended here-->
+        </table>
+
+    </div>
+
+</div>
+<!--<div>
+    <input type="button" value="alchemy" onclick="alchemy()">
+
+</div> -->
+</body>
+
+</html>
+

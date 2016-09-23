@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="" data-ng-app="GoogleDirection">
+
+<head>
+    <meta t="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login page Route & Weather Assistance</title>
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-sanitize.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWhSE1HAi753_M8rcFTfcbBXUQInf8y6c&v=3.exp&sensor=true"></script>-->
+
+    <script src="Scripts/Angular.js"></script>
+    <script src="Scripts/googleMap.js"></script>
+    <script src="Scripts/Sanitize.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+<body>
+<div class="wrapp" ng-controller="googlemapoutput">
+
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Interactive Quiz Application</a>
+                    </div>
+                </div>
+            </nav>
+    <div class="container container-table">
+        <div class="row vertical-center-row">
+
+    <table style="align-content: center" class="table table-bordered table-condensed">
+        <tr>
+            <td align="center" colspan="2">
+                <img src="user_image.png" >
+            </td>
+        </tr>
+        <tr>
+            <th>
+                User Name:
+            </th>
+            <th>
+                <input type="text" name="user_name" ng-model="username" placeholder="Unser Name">
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Password:
+            </th>
+            <th>
+                <input type="password" name="password" ng-model="password" placeholder="Password">
+            </th>
+        </tr>
+
+        <tr>
+            <td align="center" colspan="2">
+                <div >
+         <button type="submit" class="btn btn-info" ng-click="validateuser(username,password)">Log in</button>
+        </div>
+            </td>
+        </tr>
+        </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
