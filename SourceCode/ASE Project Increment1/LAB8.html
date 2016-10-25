@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASE lab Assignment 8</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="js/app.js"></script>
+    <script src="js/require.js"></script>
+    <script src="js/xml2json.min.js"></script>
+    <script src="node_modules/watson-developer-cloud/tone-analyzer/v3.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body data-ng-app="myApp"  >
+
+<div>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">ASE lab Assignment 8</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container container-table">
+        <div class="row vertical-center-row">
+
+            <div class="container container-table">
+                <div class="row vertical-center-row" ng-controller="lab8">
+
+                    <table style="align-content: center" class="table table-bordered table-condensed">
+                         
+                          
+                        <tr>
+                            <td align="center" colspan="2">
+                                <form>
+
+                                    <div ng-click="quizquestion()">
+                                        <button type="submit" class="btn btn-info"   >Get Answers</button>
+                                    </div>
+                                </form>
+                            </td>
+
+                            <td align="center" colspan="2">
+                                <form>
+                                    <div ng-click="quizgrade()">
+                                        <button type="submit" id="login_btn"   class="btn btn-info" >Get  Grades</button>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!--displays question  -->
+                                {{question}}
+
+                            </td>
+                            <td>
+                                <!-- answer-->
+                                {{answer}}
+                            </td>
+                            <td colspan="2" align="center">
+                                <!-- displaying grades-->
+                                {{grade}}
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

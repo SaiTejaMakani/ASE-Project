@@ -1,11 +1,6 @@
 /**
  * Created by saiteja on 07-09-2016.
  */
-var AddressBook = angular.module('AddressBook', []);
-
-AddressBook.controller('PersonController', function ($scope) {
-
-});
 
 angular.module('GoogleDirection', ['ngSanitize'])
     .controller('googlemapoutput', function ($scope, $http ,$location) {
@@ -354,3 +349,56 @@ function validateemail(emailId) {
     }
 }
 
+
+var app = angular.module('myApp', []);
+//noinspection JSDuplicatedDeclaration
+app.controller('lab8',['$scope','$http',function($scope,$http){
+
+
+    $scope.quizquestion=function() {
+        //console.log("in quiz question");
+       // $scope.question ="Which of the following operator can be used to access value at address stored in a pointer variable?";
+       // $scope.answer="*- value operator gives value stored at particular address";
+        $http.get("http://localhost:8080/RESTExample/restexample/QuizAnserService")
+            .then(function(response) {
+                var x2js = new X2JS();
+                var json = x2js.xml_str2json( response.data );
+                console.log(json);
+                $scope.question = json.QuizAnswerService.Question;
+                //console.log(response.data);
+                $scope.answer=json.QuizAnswerService.Answer;
+               // console.log(response.data);
+        });
+
+},
+    $scope.quizgrade=function() {
+
+        //console.log("in quiz grade");
+        //$scope.grade = "Score:: 80   Grade : A";
+        $http.get("http://localhost:8080/RESTExample/restexample/QuizMarksService")
+            .then(function(response) {
+                console.log(response.data);
+                var json= response.data;
+
+                console.log(json.Total_Quiz_Marks);
+               // console.log("in answers service");
+                var mark=json.Total_Quiz_Marks;
+                if (mark >=8){
+                    $scope.grade = "Score:" + json.Total_Quiz_Marks +"  Grade: A";
+                }
+                else
+                    if( (mark <= 6) && (mark >= 4)){
+                        $scope.grade = "Score:" + json.Total_Quiz_Marks +"  Grade: B";
+                    }
+                else {
+                        $scope.grade = "Score:" + json.Total_Quiz_Marks + "  Grade: C";
+                    }
+
+
+            });
+
+    }
+
+
+}])
+;
