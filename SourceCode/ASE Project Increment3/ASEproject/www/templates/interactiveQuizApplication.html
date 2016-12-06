@@ -1,0 +1,28 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button></ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="side-menu21"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" id="side-menu21" style="background-color:#2FCFB0;">
+        <ion-header-bar class="bar-stable">
+            <div class="title">Interactive Quiz Application</div>
+        </ion-header-bar>
+        <ion-content padding="false" class="side-menu-left has-header ">
+            <ion-list id="interactiveQuizApplication-list3">
+                <ion-item class="item-icon-left dark" id="interactiveQuizApplication-list-item1" ui-sref="interactiveQuizApplication.login" menu-close="">
+                    <i class="icon ion-log-in"></i>Login</ion-item>
+                <ion-item class="item-icon-left dark" id="interactiveQuizApplication-list-item2" ui-sref="interactiveQuizApplication.profile" menu-close="">
+                    <i class="icon ion-android-contact"></i>Profile</ion-item>
+                <ion-item class="item-icon-left dark" id="interactiveQuizApplication-list-item5" ui-sref="interactiveQuizApplication.selectSubject" menu-close="">
+                    <i class="icon ion-android-create"></i>Quiz</ion-item>
+                <ion-item class="item-icon-left dark" id="interactiveQuizApplication-list-item3" ui-sref="interactiveQuizApplication.login" menu-close="">
+                    <i class="icon ion-log-out"></i>Log out</ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
