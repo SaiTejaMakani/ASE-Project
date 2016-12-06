@@ -1,0 +1,36 @@
+<ion-view title="Login" id="page4" hide-nav-bar="true" style="background-color:#999eB0;" ng-app='app' >
+    <div class="background-image-login"></div>
+    <ion-content padding="true" class="has-header" np-app='app' >
+        <form id="login-form1" class="list">
+            <ion-list id="login-list1">
+                <label class="item item-input" id="login-input1" >
+                    <span class="input-label">Username</span>
+                    <input type="text" ng-model="username" placeholder="Username">
+                </label>
+                <label class="item item-input" id="login-input2" >
+                    <span class="input-label">Password</span>
+                    <input type="password" ng-model="password" placeholder="password">
+                </label>
+            </ion-list>
+            <div class="spacer" style="width: 300px; height: 11px;"></div>
+            <a id="login-button1" style="color:#FFFFFF;border-radius:24px 24px 24px 24px;" class="button button-dark  button-block" ng-controller="loginCtrl" ng-click="validateuser()" >Login</a>
+            <a ui-sref="interactiveQuizApplication.signup" id="login-button4" style="color:#0A0008;border-radius:24px 24px 24px 24px;" class="button button-dark  button-block button-outline">or Create account</a>
+        </form>
+        <div class="spacer" style="width: 300px; height: 5px;"></div>
+        <div class="col col-bottom">
+         <!--
+            <a class="google-sign-in button button-block" ng-controller="WelcomeCtrl"  ng-click="googleSignIn()">
+          <span class="btn-copy">Sign in with Google</span>
+            
+        </a>
+         --> 
+            
+      </div>
+         <!--google login button above --> 
+        <!--
+        <div   id="login-button-bar2" class="button-bar">
+            <a  id="login-button10" style="border-radius:24px 24px 24px 24px;" class="button button-calm  button-block" >Login with Facebook</a>
+        </div>   
+        --> 
+    </ion-content>
+</ion-view>

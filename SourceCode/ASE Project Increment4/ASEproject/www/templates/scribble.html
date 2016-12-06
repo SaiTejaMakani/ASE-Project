@@ -1,0 +1,23 @@
+<ion-view title="Scribble Here" id="scribble" style="background-color:#999eB0;">
+    
+        <!--scribble pad code written below in body tags-->
+        
+    <div ng-app='app' ng-controller='SignatureCtrl'>
+    <ion-pane>
+      <ion-header-bar class='bar-calm' ng-app='app' ng-controller='SignatureCtrl'>
+        <h1 class='title'>Devdactic Signature Drawpad</h1>
+      </ion-header-bar>
+ 
+      <ion-content class='has-header padding' scroll='true' padding="true" >
+          <canvas id='signatureCanvas' width='300' height='250' style='border: 1px solid black;'></canvas>
+          <div class='button-bar'>
+              <a style="border-radius:24px 24px 24px 24px;" class="button button-dark  button-block"  ng-click='clearCanvas()'>Clear</a>
+              <a style="border-radius:24px 24px 24px 24px;" class="button button-dark  button-block" ng-click='saveCanvas()'>Save</a>
+          </div>
+          <br>
+          <img ng-src='{{signature}}'/>
+      </ion-content>
+    </ion-pane>
+    </div>
+   
+</ion-view>

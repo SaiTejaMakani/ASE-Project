@@ -1,0 +1,19 @@
+{
+    "jscodehints.detectedExclusions": [
+        "E:/ionic/ASEproject/platforms/android/platform_www/cordova-js-src/android/promptbasednativeapi.js",
+        "E:/ionic/ASEproject/platforms/android/platform_www/cordova-js-src/plugin/android/app.js",
+        "E:/ionic/ASEproject/platforms/android/platform_www/cordova-js-src/exec.js",
+        "E:/ionic/ASEproject/platforms/android/platform_www/cordova-js-src/platform.js",
+        "E:/ionic/ASEproject/platforms/android/platform_www/plugins/cordova-plugin-device/www/device.js",
+        "E:/ionic/ASEproject/platforms/android/platform_www/plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "E:/ionic/ASEproject/platforms/android/platform_www/plugins/cordova-plugin-statusbar/www/statusbar.js",
+        "E:/ionic/ASEproject/platforms/android/platform_www/plugins/ionic-plugin-keyboard/www/android/keyboard.js",
+        "E:/ionic/ASEproject/platforms/android/platform_www/cordova.js",
+        "E:/ionic/ASEproject/platforms/android/platform_www/cordova_plugins.js",
+        "E:/ionic/ASEproject/plugins/cordova-plugin-console/tests/tests.js",
+        "E:/ionic/ASEproject/plugins/cordova-plugin-console/www/console-via-logger.js",
+        "E:/ionic/ASEproject/plugins/cordova-plugin-console/www/logger.js",
+        "E:/ionic/ASEproject/plugins/cordova-plugin-device/src/blackberry10/index.js",
+        "E:/ionic/ASEproject/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/release/angular-ui-router.js"
+    ]
+}

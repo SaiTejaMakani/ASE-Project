@@ -1,0 +1,73 @@
+/* Empty. Add your own CSS if you like */
+.background-image-login {
+  background-image: url('../img/signin.jpg');
+  width: 100vw;
+  height: 100vh;
+
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.background-image-profile {
+  background-image: url('../img/profile.jpg');
+  width: 100vw;
+  height: 100vh;
+
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.background-image-quiz {
+  background-image: url('../img/quiz.jpg');
+  width: 100vw;
+  height: 100vh;
+
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.background-image-results {
+  background-image: url('../img/results.jpg');
+  width: 100vw;
+  height: 100vh;
+
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.background-image-sub {
+  background-image: url('../img/selsub.jpg');
+  width: 100vw;
+  height: 100vh;
+
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.background-image-signup {
+  background-image: url('../img/signup.jpg');
+  width: 100vw;
+  height: 100vh;
+
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+

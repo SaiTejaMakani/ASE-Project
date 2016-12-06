@@ -1,0 +1,21 @@
+<body>
+    <ion-side-menus enable-menu-with-back-views="true">
+<ion-view  title="Select Subject"  id="page10" ng-app = 'app' style="background-color:#999eB0;"  >
+      <div class="background-image-sub"></div>
+    <ion-content padding="true" class="has-header" ng-app='app' ng-controller='SpeechCtrl'>
+        
+        <div class="list card" id="selectSubject-card26"  ng-controller='selectSubjectCtrl' ng-init="enableMenubtn()">
+            <form id="selectSubject-form15" class="list">
+                <ion-radio id="selectSubject-radio9" ng-click='speakText("selectSubject-radio9")'>C Language</ion-radio>
+                <ion-radio id="selectSubject-radio10" ng-click='speakText("selectSubject-radio10")'>Java</ion-radio>
+                <ion-radio id="selectSubject-radio11" ng-click='speakText("selectSubject-radio11")'>Angular JS</ion-radio>
+                <ion-radio id="selectSubject-radio12" ng-click='speakText("selectSubject-radio12")'>MongoDB</ion-radio>
+            </form>
+        </div>
+        <div class="spacer" style="width: 300px; height: 10px;" ></div>
+        <div >
+            <a ng-click="start_quiz()" id="selectSubject-button13" style="border-radius:24px 24px 24px 24px;" class="button button-dark  button-block ">Next</a>
+        </div>
+    </ion-content>
+</ion-view>
+</body>

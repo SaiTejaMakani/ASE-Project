@@ -1,0 +1,26 @@
+<ion-view title="Quiz" hide-back-button="true" id="page9" style="background-color:#999eB0;">
+      <div class="background-image-quiz"></div>
+    <ion-content padding="true" class="has-header" ng-app='app' ng-controller='SpeechCtrl' >
+      <div ng-controller='quizCtrl' ng-init='next_Q()'>
+        <h3 id="quiz-heading2" style="color:#221919;" ng-click='speakText("quiz-heading2")'><span>{{quiz_num}} . {{quiz_question}} </span></h3>
+        <div class="spacer" style="width: 300px; height: 4px;"></div>
+        <div class="list card" id="quiz-card29">
+            <form id="quiz-form17" class="list">
+                <ion-radio id="quiz-radio17" ng-click='speakText("quiz-radio17")' checked>{{quiz_option_a}}</ion-radio>
+                <ion-radio id="quiz-radio18" ng-click='speakText("quiz-radio18")' checked>{{quiz_option_b}}</ion-radio>
+                <ion-radio id="quiz-radio19" ng-click='speakText("quiz-radio19")' checked>{{quiz_option_c}}</ion-radio>
+                <ion-radio id="quiz-radio20" ng-click='speakText("quiz-radio20")' checked>{{quiz_option_d}}</ion-radio>
+            </form>
+        </div>
+        <div class="spacer" style="width: 300px; height: 5px;"></div>
+        <div id="quiz-button-bar3" class="button-bar">
+            <button id="quiz-button15" ng-click='next_Q()' style="border-radius:24px 24px 24px 24px;" class="button button-dark  button-block">Next</button>
+            
+            <button ui-sref="scribble" id="quiz-button16" style="border-radius:24px 24px 24px 24px;" class="button button-dark  button-block">Scribble</button>
+            
+            <a  ng-click ="submit_quiz()"  id="quiz_submit" style="border-radius:24px 24px 24px 24px;" class="button button-dark  button-block">Submit</a>
+        </div>
+      </div>
+    </ion-content>
+</ion-view>
+

@@ -1,0 +1,46 @@
+<ion-view hide-nav-bar="false" title="Profile" id="page8" style="background-color:#999eB0" ng-app='app' ng-controller='ProfileCtrl'>
+      <div class="background-image-profile"></div>
+    <ion-content padding="true" class="has-header" >
+        <!--
+        <a ui-sref="interactiveQuizApplication.updateProfile" id="profile-button6" style="border-radius:24px 24px 24px 24px;" class="button button-dark  button-block">Update Profile</a> -->
+        <div class="list card" id="profile-card21" data-ng-init='user_profile()'>
+            <ion-item id="profile-list-item7">{{user_email_id}}</ion-item>
+            <ion-item id="profile-list-item8">{{user_phone_num}}</ion-item>
+            <ion-item id="profile-list-item6">{{user_name}}</ion-item>
+        </div>
+        <div class="spacer" style="width: 300px; height: 0px;"></div>
+        <div class="list card" id="profile-card22">
+            <div class="item item-body" id="profile-list-item-container2">
+                
+                <div id="profile-markdown4" style="color:#000000;font-size:24px;">
+                    <p style="margin-top:0px;">
+                        <strong>For results click on below links</strong>
+                    </p>
+                </div>
+                <div >
+                <ion-list id="profile-list7" >
+                    <ion-item class="item item-text-wrap" class="item-icon-left" id="profile-list-item10" ng-click="result_show('Interactive_Quiz_sub_rep_c')">
+                        <i class="icon ion-ios-folder-outline"></i>{{subject_c}}  <font color ='red'>  Quiz Score:{{score_c}} </font>  Quiz Date: <font color='orange'>{{getDatetime_c | date:'medium'}} </font> </ion-item>
+                        <!--date will be give clearlly here and need to get score-->
+                </ion-list>
+                <ion-list id="profile-list8" >
+                    <ion-item class="item item-text-wrap" class="item-icon-left" id="profile-list-item10" ng-click="result_show('Interactive_Quiz_sub_rep_java')">
+                        <i class="icon ion-ios-folder-outline"></i>{{subject_java}}  <font color ='red'>  Quiz Score:{{score_java}} </font>  Quiz Date: <font color='orange'>{{getDatetime_java | date:'medium'}} </font> </ion-item>
+                        <!--date will be give clearlly here and need to get score-->
+                </ion-list>
+                    
+                <ion-list id="profile-list9" >
+                    <ion-item class="item item-text-wrap" class="item-icon-left" id="profile-list-item10" ng-click="result_show('Interactive_Quiz_sub_rep_angular')">
+                        <i class="icon ion-ios-folder-outline"></i>{{subject_js}}  <font color ='red'>  Quiz Score:{{score_js}} </font>  Quiz Date: <font color='orange'>{{getDatetime_js | date:'medium'}} </font> </ion-item>
+                        <!--date will be give clearlly here and need to get score-->
+                </ion-list>
+                <ion-list id="profile-list10" >
+                    <ion-item class="item item-text-wrap" class="item-icon-left" id="profile-list-item10" ng-click="result_show('Interactive_Quiz_sub_rep_mongo')">
+                        <i class="icon ion-ios-folder-outline"></i>{{subject_db}}  <font color ='red'>  Quiz Score:{{score_db}} </font>  Quiz Date: <font color='orange'>{{getDatetime_db | date:'medium'}} </font> </ion-item>
+                        <!--date will be give clearlly here and need to get score-->
+                </ion-list>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
